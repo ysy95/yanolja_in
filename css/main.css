@@ -321,10 +321,115 @@ figcaption p{
 }
 
 @media screen and (max-width:767px){
-  .gnb{
-    display: none;
+
+  .news_title, .event_title, .gallery_title, .event_title, .c_title, .space_title{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px;
   }
   #visual_slide{
     width: 100%;
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  #visual_slide span{
+    display: block;
+    width: 205px;
+    position:absolute; 
+    font-size: 30px;
+    color:var(--t-color02);
+    font-weight: bold;
+    line-height: 50px;
+    text-shadow: 0px 0px 4px #ccc;
+    left:3%; top:200px;
+  }
+
+
+  /* 뉴스 모바일 */
+  .news_cont{
+    margin: 0 auto;
+    width: 90%;
+  }
+  iframe{
+    width:350px;
+    height:210px; 
+    margin:20px 0px 40px 0px;
+  }
+  .news_title{
+    margin-top: 10px;
+  }
+  .news_title2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .news_p,.news_p2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .news_list li::before{
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:solid 2px #ff3478;
+    transform: translate(-15px,15px);
+  }
+  .news_list_wrap{
+    transform: translateY(-50px);
+  }
+  .news_list{
+    margin:10px 0px 0px 20px;
+    
+  }
+  .news_list li a{
+    text-indent: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    width:290px;
+  }
+
+  /* 탭콘텐츠 모바일 */
+  #tab_con{
+    background-color: #e6e6e6;
+    padding:50px 0px;
+  }
+  
+  .list{
+    margin: 30px auto;
+    width: 90%;
+  }
+  .list li{
+  }
+  .list li:not(:last-of-type){
+    border-bottom: solid 1px #fff;
+  }
+  .list li a{
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 20px;
+    text-indent: 10px;
+    background-color: rgba(0,0,0,.8);
+  }
+  .cont li img{
+    width: 200px;
+  }
+  .btn span{
+    float: right;
+    font-size: 15px;
+    color:#ec5bb5;
+  }
+
+  #space{
+    
   }
 }

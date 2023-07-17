@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /* 헤더영역서식 */
+@media screen and (min-width:1025px) {
+  
+
 header{
   width:100%;
   height: 150px;
@@ -19,6 +22,81 @@ header > h1 img{width:100%;}
 .gnb{
   position:absolute;
   top:60px;right:3%;
+
+
+}
+.gnb > ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+.gnb > ul > li{
+  margin:0px 20px;
+  position: relative;/*sub의 기준*/
+  line-height: 40px;
+  width: 120px;
+}
+.gnb > ul > li > a{
+  color:var(--f-color02);
+  font-size: var(--f-size02);
+
+}
+.gnb i.fa-angle-down{
+  transform: translateX(3px);
+}
+/* 서브메뉴서식 */
+.sub{
+  position:absolute;/*position:absolute 안 주면 메인메뉴 안올라감*/
+  background: #fff;
+  padding:2px;
+  border-radius: 4px;
+  border:solid 1px #ccc;
+  box-shadow: 0px 1px 1px #ccc;
+  display: none;
+}
+.sub > li {text-align: center;}
+.sub > li > a{
+  font-size: var(--f-size01);
+  color: var(--f-color01);
+  transition:0.3s;
+  line-height: 36px;
+  padding:2px 15px;
+  display: block;
+}
+.sub > li > a:hover{
+  background-color: var(--bg-color01);
+  color:var(--f-color02)
+}
+
+/* 푸터영역서식 */
+footer{
+  width:100%;
+  height: 300px;
+  background: var(--bg-color02);
+}
+
+}
+
+
+@media screen and (max-width:767px) {
+  
+header{
+  width:100%;
+  height: 150px;
+  position: absolute;
+  top:0px;left: 0px;
+  z-index: 1000;
+}
+
+header > h1{
+  position:absolute;
+  top:20px;
+  left:3%;
+  width: 200px;
+}
+header > h1 img{width:100%;}
+.gnb{
+  display: none;
 
 
 }
@@ -72,5 +150,4 @@ footer{
   background: var(--bg-color02);
 }
 
-
-
+}
