@@ -146,8 +146,44 @@ header > h1 img{width:100%;}
 /* 푸터영역서식 */
 footer{
   width:100%;
-  height: 300px;
   background: var(--bg-color02);
+  font-size: 16px;
+  line-height: 30px;
 }
-
+footer > dl{
+  margin: 20px;
+}
+footer dt{
+  color: #d04a9d;
+  margin-top: 10px;
+  
+}
+footer dd, .f_sns > li a, .connect{
+  color: #fff;
+  
+}
+.connect{
+  margin-left: 20px;
+}
+.f_sns{
+  margin: 20px;
+  color: #ccc;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.f_sns > li > a > i.fab{
+  font-size: 25px;
+  margin: 20px 0px;
+  transition: .3s;
+}
+.f_sns .fab:hover{
+  color: #d04a9d;
+}
+footer > address{
+  padding: 20px;
+  color: #d7d6d6;
+  font-style: normal;
+  background-color: #000;
+}
 }

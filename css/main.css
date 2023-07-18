@@ -407,8 +407,7 @@ figcaption p{
     margin: 30px auto;
     width: 90%;
   }
-  .list li{
-  }
+
   .list li:not(:last-of-type){
     border-bottom: solid 1px #fff;
   }
@@ -420,7 +419,7 @@ figcaption p{
     text-indent: 10px;
     background-color: rgba(0,0,0,.8);
   }
-  .cont li img{
+  .cont > li img{
     width: 200px;
   }
   .btn span{
@@ -432,18 +431,18 @@ figcaption p{
 #space{
   background-color: #ff93d5;
 }
-.s_wrap ul{
+.s_wrap > ul{
   margin: 0 auto;
   width: 90%;
 }
-  .s_wrap ul li{
+  .s_wrap > ul > li{
 
     height: 500px;
   }
-  .s_wrap ul li img{
+  .s_wrap > ul > li img{
     width: 100%;
   }
-  .s_wrap ul li p{
+  .s_wrap > ul > li p{
     font-size: 20px;
     font-weight: bold;
     padding: 25px 0px 20px 0px;
@@ -451,7 +450,7 @@ figcaption p{
     margin-bottom: 20px;
     line-height: 30px;
   }
-  .s_wrap ul li span{
+  .s_wrap > ul > li span{
 
     line-height: 25px;
     font-size: 14px;
@@ -474,15 +473,15 @@ figcaption p{
     display: flex;
     width:500%;
   }
-  .event_slide li{
+  .event_slide > li{
     width: 100%;
     height: 132px;
 
   }
-  .event_slide li a img{
+  .event_slide > li a img{
     height: 100%;
   }
-  .btn{
+  .e_btn{
     position: absolute;
     left: 0px;
     top: 30%;
@@ -508,7 +507,7 @@ figcaption p{
   .gallery_wrap{
     background-color: #d13997;
   }
-  .gallery_title{
+  .gallery_title,.item figcaption a{
     color: #fff;
   }
   .gallery{
@@ -527,10 +526,23 @@ figcaption p{
   }
   .item figcaption{
     position: absolute;
-    bottom:00px;
+    bottom:-70px;
     background-color: rgba(0,0,0,.8);
     width:100%;
-    height: 40px;
+    height: 60px;
+    padding: 5px;
     color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .item figcaption a{
+    display: block;
+    border: solid 1px #fff;
+    padding:3px 5px;
+    text-align: center;
+    width: 70px;
+    float: right;
+    margin: 20px 20px 0px 0px;
   }
 }

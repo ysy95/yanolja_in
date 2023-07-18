@@ -250,5 +250,11 @@ for(let i = 0; i < btn.length; i++){
   });
 }
 $(function(){
+  let g_list = $('.gallery > .item figure');
 
+  g_list.hover(function(){
+    $(this).find('figcaption').stop().animate({'bottom':'0px'},300);
+  },function(){
+    $('.item figcaption').stop().animate({'bottom':'-70px'},300);
+  });
 });
