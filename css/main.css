@@ -323,10 +323,10 @@ figcaption p{
 @media screen and (max-width:767px){
 
   .news_title, .event_title, .gallery_title, .event_title, .c_title, .space_title{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0px;
+    padding: 20px 0px;
   }
   #visual_slide{
     width: 100%;
@@ -428,8 +428,109 @@ figcaption p{
     font-size: 15px;
     color:#ec5bb5;
   }
+/* 비즈니스 공간 */
+#space{
+  background-color: #ff93d5;
+}
+.s_wrap ul{
+  margin: 0 auto;
+  width: 90%;
+}
+  .s_wrap ul li{
 
-  #space{
-    
+    height: 500px;
+  }
+  .s_wrap ul li img{
+    width: 100%;
+  }
+  .s_wrap ul li p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 0px 20px 0px;
+    border-bottom: solid 1px #b02352;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .s_wrap ul li span{
+
+    line-height: 25px;
+    font-size: 14px;
+    color: #853953;
+  }
+
+  /* 이벤트 */
+
+  .slide_wrap{
+    width:90%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  .event_slide{
+    position: relative;
+    display: flex;
+    width:500%;
+  }
+  .event_slide li{
+    width: 100%;
+    height: 132px;
+
+  }
+  .event_slide li a img{
+    height: 100%;
+  }
+  .btn{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    width: 100%;
+    }
+  i.fa-solid{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    border: solid 3px #555;
+    padding: 10px 13px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #l_btn{
+    left: 2px;
+  }
+  #r_btn{
+    right: 2px;
+  }
+
+  /* 갤러리 */
+  .gallery_wrap{
+    background-color: #d13997;
+  }
+  .gallery_title{
+    color: #fff;
+  }
+  .gallery{
+    width: 85%;
+    margin: 0px auto;
+    padding-bottom:50px;
+  }
+  .item img{
+    width: 100%;
+  }
+
+  .item figure{
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  .item figcaption{
+    position: absolute;
+    bottom:00px;
+    background-color: rgba(0,0,0,.8);
+    width:100%;
+    height: 40px;
+    color: #fff;
   }
 }
