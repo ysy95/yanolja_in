@@ -250,6 +250,7 @@ for(let i = 0; i < btn.length; i++){
   });
 }
 $(function(){
+  //캡션나오게하기
   let g_list = $('.gallery > .item figure');
 
   g_list.hover(function(){
@@ -257,4 +258,16 @@ $(function(){
   },function(){
     $('.item figcaption').stop().animate({'bottom':'-70px'},300);
   });
+
+
+
+  let list = $('.list > li > a');
+
+  //1.클릭한 탭에 해당하는 서식 적용
+  list.click(function(){
+    $(this).toggleClass('m_tab_on');//서식적용
+    $(this).find('t_arrow').toggleClass('act02');//화살표방향
+    $(this).next().slideToggle();//답변나오게
+  });
+
 });
