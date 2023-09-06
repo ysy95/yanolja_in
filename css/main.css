@@ -88,9 +88,9 @@ main{overflow: hidden;}
   cursor: pointer;
 
 }
-.on{
+/* .on{
   background-color: #742406 !important;
-}
+} */
 
 /* 뉴스서식 */
 
@@ -130,13 +130,16 @@ main{overflow: hidden;}
 #tab_con{
   background-color: #e6e6e6;
   padding:50px 0px;
+  height: 300px;
+  background-image: url('../images/tab_img.jpg');
+  background-repeat: no-repeat;
+  background-size: 22%;
+  background-position-x: 900px;
+  background-position-y: 180px;
 }
 .tcon{
   width:1200px;height:600px;
   margin:var(--m-auto);
-  /* background-image: url('../images/tab_content01.jpg');
-  background-repeat: no-repeat;
-  background-position: center right; */
   overflow: hidden;
 }
 .c_title{font-size: 28px;}
@@ -166,9 +169,12 @@ main{overflow: hidden;}
   color:#626262;
   display: none;
 }
-#tab_con .tcon img{
-  /* transform: translateY(100px); */
+
+/* #tab_con .tcon img{
   margin-top: 100px;
+} */
+.cont img{
+  display: none;
 }
 
 #tab_con .cont span{
@@ -635,10 +641,10 @@ figcaption p{
 @media screen and (max-width:767px){
 
   .news_title, .event_title, .gallery_title, .event_title, .c_title, .space_title{
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
-    text-align: center;
-    padding: 20px 0px;
+    text-align:center;
+    padding: 30px 0px;
   }
   #visual_slide{
     width: 100%;
