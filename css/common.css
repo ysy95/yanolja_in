@@ -13,7 +13,7 @@ footer > address{
   font-weight: 600;
 }
 .f_top > ul > li, .f_sns > li a, .connect{
-  color: #fff;
+  color: #d4d4d4;
   
 }
 
@@ -87,23 +87,61 @@ header > h1 img{width:100%;}
 
 /* 푸터영역서식 */
 footer{
-  padding:20px 0px;
+  padding-top:10px;
   width:100%;
   background: var(--bg-color02);
 }
 .f_wrapper{
+  box-sizing: border-box;
   display: flex;
   width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
 }
 .f_top{
-  width: 1100px;
+  width: 940px;
   line-height: 30px;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
+.connect_wrap{
+  padding-right: 50px;
+}
+.connect{
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.f_sns{
+  display: flex;
+  justify-content: space-between;
+}
+.f_sns > li a{
+  font-size: 16px;
+  margin-right: 12px;
+  transition: .4s;
+}
+.f_sns >li a:hover{
+    color: #d04a9d;
+}
+.f_top > ul > li:first-child{
+  font-size: 16px;
+}
+footer > address{
+  padding:10px 0px;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 14px;
+}
+footer > address p{
+  width: 1200px;
+  margin:0 auto;
+}
+.address_title{
+  font-size: 18px;
+  font-weight: bold;
+}
 }
 
 @media screen and (min-width:768px) and (max-width:1024px){
