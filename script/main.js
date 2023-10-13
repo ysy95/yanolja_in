@@ -270,4 +270,13 @@ $(function(){
     $(this).next().slideToggle();//답변나오게
   });
 
+
+    //1.변수
+    let toggle = $('#toggle');
+
+    //2.클릭시 메뉴 보이게
+    toggle.click(()=>{
+      $('.gnb').slideToggle();
+    })
 });
+

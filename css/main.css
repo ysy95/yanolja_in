@@ -88,9 +88,9 @@ main{overflow: hidden;}
   cursor: pointer;
 
 }
-/* .on{
+.on{
   background-color: #742406 !important;
-} */
+}
 
 /* 뉴스서식 */
 
@@ -170,9 +170,6 @@ main{overflow: hidden;}
   display: none;
 }
 
-/* #tab_con .tcon img{
-  margin-top: 100px;
-} */
 .cont img{
   display: none;
 }
@@ -519,15 +516,16 @@ figcaption p{
   }
 /* 비즈니스 공간 */
 #space{
-  background-color: #ff93d5;
+  background: rgba(255, 52, 120, .1);
 }
 .s_wrap > ul{
-  margin: 0 auto;
-  width: 90%;
+  margin: 20px auto;
+  width: 80%;
+  padding-bottom: 30px;
 }
   .s_wrap > ul > li{
-
-    height: 500px;
+    width: 100%;
+    margin: 20px 0px 40px 0px;
   }
   .s_wrap > ul > li img{
     width: 100%;
@@ -561,11 +559,10 @@ figcaption p{
   .event_slide{
     position: relative;
     display: flex;
-    width:500%;
+    width:450%;
   }
   .event_slide > li{
     width: 100%;
-    height: 132px;
 
   }
   .event_slide > li a img{
@@ -574,7 +571,7 @@ figcaption p{
   .e_btn{
     position: absolute;
     left: 0px;
-    top: 30%;
+    top: 35%;
     width: 100%;
     }
   #l_btn, #r_btn{
@@ -764,7 +761,7 @@ figcaption p{
   }
 /* 비즈니스 공간 */
 #space{
-  background-color: #ff93d5;
+  background: rgba(255, 52, 120, .1);
 }
 .s_wrap > ul{
   margin: 0 auto;
@@ -822,15 +819,6 @@ figcaption p{
     top: 30%;
     width: 100%;
     }
-  i.fa-solid{
-    cursor: pointer;
-    position: absolute;
-    border-radius: 50%;
-    border: solid 3px #555;
-    padding: 10px 13px;
-    font-size: 20px;
-    font-weight: bolder;
-  }
   #l_btn{
     left: 2px;
   }
