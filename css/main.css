@@ -8,6 +8,11 @@ main{overflow: hidden;}
 #visual_slide div:last-of-type{z-index: 8;}
 
 .act02{transform:rotate(180deg);}
+
+.on{
+  background-color: #d13997 !important;
+}
+
 @media screen and (min-width:1025px){
 
 
@@ -88,9 +93,7 @@ main{overflow: hidden;}
   cursor: pointer;
 
 }
-.on{
-  background-color: #742406 !important;
-}
+
 
 /* 뉴스서식 */
 
@@ -410,9 +413,7 @@ figcaption p{
     cursor: pointer;
   
   }
-  .on{
-    background-color: #742406 !important;
-  }
+
 
   /* 뉴스 태블릿 */
   .news_cont{
@@ -660,6 +661,53 @@ figcaption p{
     text-shadow: 0px 0px 4px #ccc;
     left:3%; top:200px;
   }
+
+  .sns{
+    position: absolute;
+    top:420px;left:3%;
+    z-index:10;
+  }
+  .sns > li {
+    display: inline;
+    border:solid 1px var(--f-color02);
+    padding:10px 8px 6px 8px;
+  }
+
+  .sns i.fab{color:#fff; font-size:16px;}
+  
+  /* 좌,우 버튼서식 */
+  .s_btn{
+    position: absolute;
+    top:45%;left:3%;
+    display: flex;
+    z-index: 20;
+  }
+  .s_btn > li{
+    background-color: #f2f2f2;
+    padding:10px 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* 컨트롤 버튼 서식 */
+  #visual_slide .c_btn{
+    position: absolute;
+    right: 1.5%; top:30%;
+    z-index:10;
+  }
+  
+  #visual_slide .c_btn > li{
+    width:12px; height: 12px;
+    border-radius: 50%;
+    background: var(--f-color02);
+    margin-bottom:10px;
+    cursor: pointer;
+  
+  }
+  
+  
+
+
 
 
   /* 뉴스 모바일 */
