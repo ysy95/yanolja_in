@@ -368,7 +368,7 @@ figcaption p{
   }
   .sns{
     position: absolute;
-    top:320px;left:5%;
+    top:340px;left:5%;
     z-index:10;
   }
   .sns > li {
@@ -387,7 +387,7 @@ figcaption p{
   /* 좌,우 버튼서식 */
   .s_btn{
     position: absolute;
-    top:60%;left:5%;
+    top:62%;left:5%;
     display: flex;
     z-index: 20;
   }
@@ -406,7 +406,7 @@ figcaption p{
   }
   
   #visual_slide .c_btn > li{
-    width:14px; height: 14px;
+    width:18px; height: 18px;
     border-radius: 50%;
     background: var(--f-color02);
     margin-bottom:20px;
@@ -417,14 +417,15 @@ figcaption p{
 
   /* 뉴스 태블릿 */
   .news_cont{
+    margin-bottom: 50px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   iframe{
     width:50%;
     height:340px; 
-    margin:20px 0px 20px 5%;
+    margin:20px 0px 20px 3%;
   }
   .news_title{
     text-align: left;
@@ -457,7 +458,7 @@ figcaption p{
     width: 350px;
   }
   .news_list{
-    margin:10px 0px 0px 7%;
+    margin:10px 0px 0px 10%;
     
   }
   .news_list li a{
@@ -472,7 +473,6 @@ figcaption p{
   /* 탭콘텐츠 모바일 */
   #tab_con{
     background-color: #e6e6e6;
-    padding:50px 0px;
   }
   /* 탭메뉴 클릭시 적용되는 서식 */
 .m_tab_on{
@@ -481,8 +481,9 @@ figcaption p{
 
   .list{
     margin: 30px auto;
-    width: 70%;
+    width: 60%;
   }
+
 
   .list li:not(:last-of-type){
     border-bottom: solid 1px #fff;
@@ -499,8 +500,7 @@ figcaption p{
     display: none;
     font-size: 16px;
     line-height: 30px;
-    border-left: solid 1px #888;
-    border-right: solid 1px #888;
+    border: solid 1px #888;
     padding: 10px;
 
   }
@@ -521,9 +521,8 @@ figcaption p{
   background: rgba(255, 52, 120, .1);
 }
 .s_wrap > ul{
-  margin: 20px auto;
-  width: 70%;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 60%;
 }
   .s_wrap > ul > li{
     width: 100%;
